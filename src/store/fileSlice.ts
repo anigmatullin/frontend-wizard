@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { current } from '@reduxjs/toolkit'
-import { act } from "react-dom/test-utils";
 
 
 export type FileInfo = {
@@ -27,7 +26,7 @@ const slice = createSlice({
 
         remove: (state, action) => {
             const id = action.payload.id;
-            return state.filter(item => item.id != id);
+            return state.filter(item => item.id !== id);
         }
 
     },

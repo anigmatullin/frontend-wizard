@@ -1,7 +1,6 @@
 import React from 'react';
 
 import store from '../../store/store';
-import {IRootState} from '../../store/store';
 
 import { Link } from 'react-router-dom';
 

@@ -15,7 +15,7 @@ export default function Login()
 {
     const form = useForm<FormData>();
 
-    const {register, control} = form;
+    const {register} = form;
 
     return (
     <div>

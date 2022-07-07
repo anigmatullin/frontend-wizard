@@ -3,7 +3,6 @@ import {useDropzone} from 'react-dropzone'
 import { v4 as uuidv4 } from 'uuid';
 
 import store from '../../store/store';
-import {IRootState} from '../../store/store';
 import {add} from '../../store/fileSlice';
 
 import FileList from '../FileList';

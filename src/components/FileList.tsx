@@ -1,9 +1,7 @@
-import React, {useCallback, useMemo, useState} from 'react'
-import {useDropzone} from 'react-dropzone'
+import React, {useState} from 'react'
 
 import store from '../store/store';
 import {remove} from '../store/fileSlice';
-import {IRootState} from '../store/store';
 import {FileInfo} from '../store/fileSlice';
 
 function rm(id: string)
@@ -17,7 +15,7 @@ function createRow(item: FileInfo)
     <tr>
         <td>{item.filename}</td> <td>{item.filetype}</td> <td>{item.size}</td> <td>{item.lastModified}</td>
         <td>
-            <a className="action" onClick={() => rm(item.id)}>Delete</a>
+            <a className="action" onClick={() => rm(item.id)} href="#">Delete</a>
         </td>
     </tr>
     );
