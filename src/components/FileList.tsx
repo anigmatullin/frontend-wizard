@@ -15,7 +15,7 @@ function createRow(item: FileInfo)
     <tr>
         <td>{item.filename}</td> <td>{item.filetype}</td> <td>{item.size}</td> <td>{item.lastModified}</td>
         <td>
-            <button className="action" onClick={() => rm(item.id)} >Delete</button>
+            <button className="action" onClick={() => rm(item.id)} ><span style={{color: 'red'}}>&times;</span></button>
         </td>
     </tr>
     );
